@@ -233,8 +233,13 @@ public class form extends JFrame {
                 String mobileNumber = mob.getText();
                 int len = mobileNumber.length();
                 String password = passwordField.getText();
-                gender = rb.getText().toString();
-                gender = rb1.getText().toString();
+                if(rb.isSelected()) {
+                	 gender = rb.getText().toString();
+                }else {
+                	 gender = rb1.getText().toString();
+                }
+                 
+               
                 String b = builder.toString();
                 
                 
